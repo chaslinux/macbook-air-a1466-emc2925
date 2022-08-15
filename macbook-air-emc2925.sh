@@ -37,7 +37,6 @@ wireless=$(ls | grep 'amd64.deb')
 ### Install the created .deb file and the drivers ###
 
 sudo dpkg -i $wireless
-sudo dpkg -i bcwc-pcie_20220812-1_amd64.deb
 sudo depmod
 sudo modprobe facetimehd
 
